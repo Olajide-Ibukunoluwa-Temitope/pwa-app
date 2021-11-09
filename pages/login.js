@@ -32,7 +32,7 @@ const Login = () => {
                         onSubmit={values => {
                             // same shape as initial values
                             console.log(values);
-                            // router.push('/gallery')
+                            router.push('/gallery')
                         }}
                     >
                         {() => (

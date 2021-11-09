@@ -7,8 +7,10 @@ import Input from '../components/Input';
 import Button from '../components/Button';
 import { signUpFields } from '../constants/inputFieldData';
 import { signuUpSchema } from '../constants/validationSchema';
+import { useRouter } from 'next/router';
 
 const Signup = () => {
+    const router = useRouter();
     return (
         <div className="flex flex-col items-center justify-center h-screen">
             <Head>
@@ -33,6 +35,7 @@ const Signup = () => {
                         onSubmit={values => {
                             // same shape as initial values
                             console.log(values);
+                            router.push('/login');
                         }}
                     >
                         {({ errors, touched }) => (

@@ -1,0 +1,4 @@
+export const galleryActionTypes = {
+    ADD_TO_IMAGE_GALLERY: 'ADD_TO_IMAGE_GALLERY',
+    ADD_TO_VIDEO_GALLERY: 'ADD_TO_VIDEO_GALLERY'
+  }
