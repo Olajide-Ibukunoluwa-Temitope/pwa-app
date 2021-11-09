@@ -2,7 +2,6 @@ import * as Yup from 'yup';
 
 export const signuUpSchema = Yup.object().shape({
     fullName: Yup.string()
-        .matches(/^[a-z]([-']?[a-z]+)*( [a-z]([-']?[a-z]+)*)+$/, 'please fill in your full name')
         .required('this field is required'),
     email: Yup.string().email('Invalid email').required('Required'),
     password: Yup.string()
